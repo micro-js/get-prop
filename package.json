@@ -1,0 +1,13 @@
+{
+  "name": "@themang/get-prop",
+  "description": "Retrieve a nested property from an object",
+  "repository": "git://github.com/micro-js/get-prop.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "2.x",
+    "standard": "^4.0.0"
+  }
+}
