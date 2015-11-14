@@ -1,5 +1,5 @@
 {
-  "name": "@themang/get-prop",
+  "name": "get-prop",
   "description": "Retrieve a nested property from an object",
   "repository": "git://github.com/micro-js/get-prop.git",
   "version": "0.1.0",
