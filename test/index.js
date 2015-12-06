@@ -14,7 +14,6 @@ test('should get property using string', function (t) {
 
   t.equal(getProp('foo', obj), 'bar')
   t.end()
-
 })
 
 test('should get property using array', function (t) {
@@ -24,16 +23,15 @@ test('should get property using array', function (t) {
   t.end()
 })
 
-
 test('should get nested property using string', function (t) {
-  var obj = {foo: {bar: 'bax'}}
+  var obj = {foo: {bar: 'baz'}}
 
   t.equal(getProp('foo.bar', obj), 'baz')
   t.end()
 })
 
 test('should get nested property using array', function (t) {
-  var obj = {foo: {bar: 'bax'}}
+  var obj = {foo: {bar: 'baz'}}
 
   t.equal(getProp(['foo', 'bar'], obj), 'baz')
   t.end()
