@@ -1,31 +1,44 @@
 
 # get-prop
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![Build status][travis-image]][travis-url]
+[![Git tag][git-image]][git-url]
+[![NPM version][npm-image]][npm-url]
+[![Code style][standard-image]][standard-url]
 
-Retrieve a nested property from an object
+Get nested property from object.
 
 ## Installation
 
-    $ npm install micro-js/get-prop
+    $ npm install @micro-js/get-prop
 
 ## Usage
 
-Arguments:
+```js
+var getProp = require('@micro-js/get-prop')
 
-  * `obj` - The objecy you want to retrieve a property from
-  * `path` - The path you want to retrieve (as an array or string)
+var obj = {foo: {bar: 'baz'}}
+getProp('foo.bar', obj) // => 'baz'
+```
 
-Returns the value of the property at the specified path, or undefind if the path was unreachable (e.g. ue to the non-existence of an intermediate property)
+## API
+
+### getProp(path, obj)
+
+- `path` - array or dot seperated string specifying path
+- `obj` - obj to retrieve property from
+
+**Returns:** property
 
 ## License
 
-The MIT License
+MIT
 
-Copyright &copy; 2015, Weo.io &lt;info@weo.io&gt;
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+[travis-image]: https://img.shields.io/travis/micro-js/get-prop.svg?style=flat-square
+[travis-url]: https://travis-ci.org/micro-js/get-prop
+[git-image]: https://img.shields.io/github/tag/micro-js/get-prop.svg
+[git-url]: https://github.com/micro-js/get-prop
+[standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat
+[standard-url]: https://github.com/feross/standard
+[npm-image]: https://img.shields.io/npm/v/@micro-js/get-prop.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@micro-js/get-prop

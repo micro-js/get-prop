@@ -3,18 +3,38 @@
  */
 
 var getProp = require('..')
-var assert = require('assert')
+var test = require('tape')
 
 /**
  * Tests
  */
 
-describe('getProp', function () {
-  it('should work', function () {
-    assert.equal(getProp({}, 'a.b'), undefined)
-    assert.equal(getProp({a: {b: 1}}, 'a.b'), 1)
-    assert.equal(getProp({a: 1}, 'a'), 1)
-    assert.equal(getProp({a: {b: 1}}, ['a', 'b']), 1)
-    assert.equal(getProp(undefined, ['a']), undefined)
-  })
+test('should get property using string', function (t) {
+  var obj = {foo: 'bar'}
+
+  t.equal(getProp('foo', obj), 'bar')
+  t.end()
+
+})
+
+test('should get property using array', function (t) {
+  var obj = {foo: 'bar'}
+
+  t.equal(getProp(['foo'], obj), 'bar')
+  t.end()
+})
+
+
+test('should get nested property using string', function (t) {
+  var obj = {foo: {bar: 'bax'}}
+
+  t.equal(getProp('foo.bar', obj), 'baz')
+  t.end()
+})
+
+test('should get nested property using array', function (t) {
+  var obj = {foo: {bar: 'bax'}}
+
+  t.equal(getProp(['foo', 'bar'], obj), 'baz')
+  t.end()
 })

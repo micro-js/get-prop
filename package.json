@@ -1,13 +1,18 @@
 {
-  "name": "get-prop",
-  "description": "Retrieve a nested property from an object",
+  "name": "@micro-js/get-prop",
+  "description": "Get nested property from object.",
   "repository": "git://github.com/micro-js/get-prop.git",
   "version": "0.1.0",
   "license": "MIT",
   "main": "lib/index.js",
-  "dependencies": {},
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish --access=public"
+  },
+  "dependencies": {
+    "@micro-js/is-string": "^1.0.1"
+  },
   "devDependencies": {
-    "mocha": "2.x",
-    "standard": "^4.0.0"
+    "tape": "^4.2.2",
+    "standard": "^5.4.1"
   }
 }
