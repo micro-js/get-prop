@@ -2,7 +2,7 @@
   "name": "@f/get-prop",
   "description": "Get nested property from object.",
   "repository": "git://github.com/micro-js/get-prop.git",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
