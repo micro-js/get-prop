@@ -10,12 +10,12 @@ Get nested property from object.
 
 ## Installation
 
-    $ npm install @micro-js/get-prop
+    $ npm install @f/get-prop
 
 ## Usage
 
 ```js
-var getProp = require('@micro-js/get-prop')
+var getProp = require('@f/get-prop')
 
 var obj = {foo: {bar: 'baz'}}
 getProp('foo.bar', obj) // => 'baz'
@@ -40,5 +40,5 @@ MIT
 [git-url]: https://github.com/micro-js/get-prop
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat
 [standard-url]: https://github.com/feross/standard
-[npm-image]: https://img.shields.io/npm/v/@micro-js/get-prop.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/@micro-js/get-prop
+[npm-image]: https://img.shields.io/npm/v/@f/get-prop.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@f/get-prop

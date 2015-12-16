@@ -1,5 +1,5 @@
 {
-  "name": "@micro-js/get-prop",
+  "name": "@f/get-prop",
   "description": "Get nested property from object.",
   "repository": "git://github.com/micro-js/get-prop.git",
   "version": "1.0.0",
@@ -9,7 +9,7 @@
     "postversion": "git push && git push --tags && npm publish --access=public"
   },
   "dependencies": {
-    "@micro-js/is-string": "^1.0.1"
+    "@f/is-string": "^1.0.1"
   },
   "devDependencies": {
     "tape": "^4.2.2",
